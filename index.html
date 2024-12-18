@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fefcfb;
+    }
+
+    header {
+      background-color: rgba(254, 252, 251, 1);
+      color: rgba(34, 34, 34, 1);
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'Volkhov', serif;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      margin-left: 1rem;
+      color: rgba(34, 34, 34, 1);
+    }
+
+    .first {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      gap: 3rem;
+    }
+
+    .log {
+
+      font-family: 'Poppins', sans-serif;
+      color: rgba(253, 141, 58, 1);
+
+    }
+
+    .sign {
+      background-color: rgba(250, 116, 54, 1);
+      font-family: 'Poppins', sans-serif;
+      ;
+      color: white;
+      padding: 1rem 3rem;
+      border-radius: 5px;
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(254, 252, 251, 1);
+    }
+
+    .parent {
+      display: flex;
+      flex-direction: row;
+      margin-left: 140px;
+    }
+
+    .parent1 {
+      margin: 50px 90px;
+    }
+
+    .parent1 h1 {
+      font-size: 42px;
+      font-family: 'Volkhov', serif;
+      font-weight: bold;
+    }
+
+    h1 .color {
+      color: rgba(250, 116, 54, 1);
+      font-weight: bold;
+    }
+
+    .parent1 p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      line-height: 40px;
+      text-align: left;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+      color: rgba(250, 116, 54, 1);
+      border-radius: 0rem;
+      border: 1px solid rgba(250, 116, 54, 1);
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .container2 {
+      margin: 10px 10px;
+    }
+    .container2 img{
+      width:500px;
+      height:99;
+    }
+    .main {
+      height: 30vh;
+      width: -10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .holder {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .content-holder {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .select-group {
+      display: flex;
+      justify-content: space-around;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .label {
+      font-size: 16px;
+      font-weight: 500;
+      color: #222222;
+      line-height: 30px;
+    }
+
+    .option {
+      margin: 0px 45px 0px 45px;
+    }
+
+    .option span {
+      color: #fa7436;
+    }
+
+    .sub-label {
+      font-size: 12px;
+      color: #666666;
+    }
+
+    .button-holder {
+      margin-top: 8px;
+    }
+
+    .button-holder a {
+      background-color: #fa7436;
+      padding: 1rem;
+      border-radius: 5px;
+      color: white;
+      font-family: "Poppins";
+      margin-top: 2px;
+      cursor: pointer;
+    }
+
+    .button-holder a:hover {
+      -webkit-box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.16);
+      -moz-box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.16);
+      box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.16);
+    }
+
+    section {
+        margin-left: 60px;
+        margin-right: 60px;
+      background-color: rgba(247, 248, 252, 1);
+      padding: 15px;
+      flex: 1;
+    }
+
+    .container3 {
+      max-width: 1200px;
+      margin: 0 auto
+    }
+
+    .sub {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .things {
+      background-color: rgba(247, 248, 252, 1);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: rgba(34, 34, 34, 1);
+      font-family: 'Volkhov', serif;
+    }
+
+    h1.color {
+      color: rgba(250, 116, 54, 1);
+    }
+
+    .container p {
+      font-family:"Poppins", sans-serif;
+      color:rgba(102, 102, 102, 1);
+      font-size: 0.8rem;
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+
+    .grid {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 200px 0px 200px;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 1);
+      text-align: left;
+      flex: 1;
+      padding: 18px;
+      margin: 0px;
+    }
+
+    .icon {
+      margin-bottom:27px;
+    }
+
+    .icon img {
+      width: 30px;
+      height: 30px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: rgba(34, 34, 34, 1);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 11px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .Hero {
+      background-color: rgba(254, 252, 251, 1);
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .product {
+      text-align: center;
+    }
+
+    .product h2 {
+      font-family: 'Volkhov', serif;
+    }
+
+    .product h2 .color {
+      color: rgba(250, 116, 54, 1);
+    }
+
+    .product p {
+      font-family: "Poppins", sans-serif;
+      color: rgba(102, 102, 102, 1);
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+
+    .image-grid {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+
+    }
+
+    .image-card {
+      background-color: rgba(254, 252, 251, 1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      max-width: 200px;
+      text-align: left;
+      padding-bottom: 3px;
+    }
+
+    .image-card img {
+      width: 100%;
+
+    }
+
+    .deals {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 10px;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+    }
+
+    .place {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 10px;
+    }
+
+    .sep {
+      display: flex;
+      gap: 3px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: space-between;
+      gap: 7px;
+      font-size: 13px;
+    }
+
+    .place {
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+      color: rgba(102, 102, 102, 1);
+    }
+
+    .new {
+      text-decoration: line-through;
+    }
+
+    .old {
+      background-color: rgba(255, 231, 219, 1);
+      color: rgba(250, 116, 54, 1);
+    }
+
+    .shadow {
+      box-shadow: 6px 7px 5px 0px rgba(255, 231, 219, 1);
+    }
+
+    .bottom {
+      background-color: rgba(254, 252, 251, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .container4 {
+      background-color: rgba(254, 252, 251, 1);
+    }
+
+    .seperate {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 70px;
+      margin-left: 100px;
+      gap: 30px;
+    }
+    .content h1{
+      font-size: 40px;
+    }
+
+    .content p {
+      text-align: center;
+      color: rgba(102, 102, 102, 1);
+      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+      margin-top: 15px;
+    }
+
+    .side-btn {
+      margin-top: 16px;
+      display: flex;
+      margin-left: 900px;
+
+    }
+
+    .tree img {
+      width: 60px;
+      height: 60px;
+    }
+
+
+    .label-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .label-card {
+      background-color: rgba(254, 252, 251, 1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      max-width: 250px;
+      overflow: hidden;
+      text-align: left;
+      margin: 0px 0px 0px 3px;
+    }
+
+    .label-card img {
+      width: 100%;
+
+    }
+
+    .place1 {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 10px;
+
+
+    }
+
+    .rome {
+      font-family: "Poppins", sans-serif;
+      color: rgba(34, 34, 34, 1);
+      font-weight: bold;
+    }
+
+    .place1 {
+      color: rgba(250, 116, 54, 1);
+      font-weight: bold;
+    }
+
+    .two {
+      display: flex;
+      gap: 3px;
+    }
+
+    .two img {
+      width: 12px;
+      height: 12px;
+    }
+
+    .trip {
+      font-size: 10px;
+      font-family: "Poppins", sans-serif;
+      color: rgba(102, 102, 102, 1)
+    }
+
+    .pic2 {
+      width: 36px;
+      height: 36px;
+    }
+
+    .client {
+      background-color: rgba(247, 248, 252, 1);
+      margin-top: 40px;
+      padding: 30px 30px 80px 20px;
+    }
+
+    .testimonial {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-part {
+      margin-right: 100px;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .content-part p {
+      font-family: "Roboto", sans-serif;
+      font-size: 11px;
+      margin-top: 8px;
+    }
+
+    .round-btn {
+      margin-top: 20px;
+    }
+
+    .person img {
+      margin-bottom: 140px;
+    }
+
+    .content-image {
+      background-color: rgba(255, 255, 255, 1);
+      margin-left: 20px;
+      max-width: 320px;
+      margin-top: 20px;
+      border-radius: 15px;
+
+    }
+
+    .mike {
+      margin-top: 7px;
+    }
+
+    .mike p {
+      font-size: 9px;
+    }
+
+    .container5 {
+      background-color: rgba(254, 252, 251, 1);
+    }
+
+    .container5 h1 {
+      font-size: 33px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .blog-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .blog-card {
+      margin-top: 40px;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 5px;
+      max-width: 200px;
+      text-align: left;
+
+    }
+
+    .blog-card img {
+      width: 100%;
+    }
+
+    .four-card {
+      margin: 10px 10px 10px 10px;
+    }
+
+    .four-card p {
+      font-family: "Poppins", sans-serif;
+      color: rgba(34, 34, 34, 1);
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .four-card h4 {
+      margin-top: 10px;
+      font-family: "Inter", sans-serif;
+      font-size: 10px;
+      color: rgba(153, 153, 153, 1);
+    }
+
+    .slider {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .exclusive {
+      max-width: 900px;
+      height: 260px;
+      background-color: rgba(250, 116, 54, 1);
+      margin-top: 35px;
+      margin-left: 220px;
+      margin-right: 100px;
+      border-radius: 10px;
+    }
+
+    .exclusive-part {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+
+    }
+
+    .subscribe {
+      text-align: center;
+    }
+
+    .subscribe p {
+      color: rgba(255, 255, 255, 1);
+      font-size: 30px;
+      font-family: 'Volkhov', serif;
+      font-weight: bold;
+    }
+
+    .mail {
+      margin-top: 40px;
+      width: 500px;
+      height: 0 auto;
+      background-color: rgba(255, 255, 255, 1);
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .separate-cont {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 270px;
+    }
+
+    .separate-cont {
+      width: 20px;
+      height: 19px;
+    }
+
+    .subscribe-btn {
+      background-color: rgba(250, 116, 54, 1);
+      padding: 10px 12px 10px 12px;
+      border-radius: 5px;
+      color: rgba(255, 255, 255, 1);
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+    }
+
+    section {
+      background-color: rgba(247, 248, 252, 1);
+    }
+
+    .final {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    .facebook {
+      text-align: left;
+      max-width: 220px;
+    }
+
+    .facebook p {
+      margin-top: 15px;
+      font-size: 12px;
+      font-family: "Poppins", sans-serif;
+    }
+     
+    .social {
+        display: flex;
+    }
+
+
+    .social img {
+      margin-top: 10px;
+    }
+
+    .details {
+      display: flex;
+      gap: 70px;
+    }
+
+    .company {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      color: rgba(34, 34, 34, 1);
+    }
+
+    .semi-bold {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+    }
+
+    .semi-bold a {
+      font-family: "Poppins", sans-serif;
+      color: rgba(102, 102, 102, 1);
+      font-size: 12px;
+    }
+
+    hr {
+      margin-top: 30px;
+      margin-left: 100px;
+      width: 80%;
+    }
+
+    footer {
+      margin-top: 20px;
+    }
+
+    .end {
+      display: flex;
+      justify-content: space-around;
+      font-size: 30px;
+      gap: 30px;
+      padding: 30px;
+      margin-bottom: 20px;
+
+    }
+
+    .end h1 {
+      font-size: 12px;
+      font-family: "Poppins", sans-serif;
+      color: rgba(102, 102, 102, 1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Trabook<img src="Vector.svg" alt=""></div>
+      <div class="nav-links">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Destination</a>
+        <a href="">Tour</a>
+        <a href="">Blog</a>
+      </div>
+      <div class="first">
+        <div class="log">Login</div>
+        <div class="sign">Sign up</div>
+      </div>
+    </nav>
+  </header>
+  <section class="container1">
+    <div class="parent">
+      <div class="parent1">
+        <h1>Get Started your</br>
+          exciting <span class="color">journey</span>
+          <br> with us
+        </h1>
+        <p> A Team of experienced tourism professionals<br>
+          will provide you with the best advice and tips for your<br>
+          desire place. </p>
+
+        <a href="" class="cta-button">Discover now</a>
+      </div>
+      <div class="container2">
+        <img src="Image.png"  alt="">
+      </div>
+    </div>
+  </section>
+
+  <div class="main">
+    <div class="holder">
+      <div class="content-holder">
+        <div class="select-group">
+          <div class="option">
+            <div class="label">
+              Location
+              <span>
+                <img src="Vector 4855.png" alt="" />
+              </span>
+            </div>
+            <div class="sub-label">Were are you goinging?</div>
+          </div>
+          <div class="option">
+            <div class="label">
+              Date
+              <span>
+                <img src="Vector 4855.png" alt="" />
+              </span>
+            </div>
+            <div class="sub-label">When will you go?</div>
+          </div>
+          <div class="option">
+            <div class="label">
+              Guest
+              <span>
+                <img src="Vector 4855.png" alt="" />
+              </span>
+            </div>
+            <div class="sub-label">Number of Guest</div>
+          </div>
+        </div>
+        <div class="button-holder">
+          <a class="btn-text">Explorer Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="things ">
+    <div class="container">
+      <h1>Things you need <span class="color">to do</span></h1>
+      <p>We ensure that you embark on a perfectly planned,<br>
+        safe vacation at a price you can afford.</p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">
+            <img src="Group.png" alt="">
+          </div>
+          <h3>Sign up<h3>
+              <p>Completes all the work associated
+                with planning and processing</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="Group (1).png" alt="">
+          </div>
+          <h3>Worth of Money<h3>
+              <p>After successful access then book from exclusive deals & pricing</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="Group (2).png" alt="">
+          </div>
+          <h3>Exciting Travel<h3>
+              <p>Start and explore a wide range of exciting travel experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Hero">
+    <div class="product">
+      <h1>Exclusive <span class="color">deals & discounts</span></h1>
+      <p>Discover our fantastic early booking discounts<br>
+        & start planning your journey.</p>
+
+      <div class="image-grid">
+        <div class="image-card">
+          <img src="Image (1).png" alt="">
+          <div class="deals">
+            <div class="star1">Marida</div>
+            <div class="star2">
+              <img src="star 1.png">
+            </div>
+          </div>
+          <div class="place">
+            <div class="sep">
+              <div><img src="Vector.png"></div>
+              <div class="ooty1">spain</div>
+            </div>
+            <div class="ooty2">
+              <div class="box">
+                <div class="new">$950</div>
+                <div class="old">$850</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow">
+          <div class="image-card">
+            <img src="Image (2).png" alt="">
+            <div class="deals">
+              <div class="star1">Marida</div>
+              <div class="star2">
+                <img src="star 1.png">
+              </div>
+            </div>
+            <div class="place">
+              <div class="sep">
+                <div><img src="Vector.png"></div>
+                <div class="ooty1">spain</div>
+              </div>
+              <div class="ooty2">
+                <div class="box">
+                  <div class="new">$950</div>
+                  <div class="old">$850</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-card">
+          <img src="Image (3).png" alt="">
+          <div class="deals">
+            <div class="star1">Marida</div>
+            <div class="star2">
+              <img src="star 1.png">
+            </div>
+          </div>
+          <div class="place">
+            <div class="sep">
+              <div><img src="Vector.png"></div>
+              <div class="ooty1">spain</div>
+            </div>
+            <div class="ooty2">
+              <div class="box">
+                <div class="new">$950</div>
+                <div class="old">$850</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-card">
+          <img src="Image (4).png" alt="">
+          <div class="deals">
+            <div class="star1">Marida</div>
+            <div class="star2">
+              <img src="star 1.png">
+            </div>
+          </div>
+          <div class="place">
+            <div class="sep">
+              <div><img src="Vector.png"></div>
+              <div class="ooty1">spain</div>
+            </div>
+            <div class="ooty2">
+              <div class="box">
+                <div class="new">$950</div>
+                <div class="old">$850</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="bottom">
+    <img src="Slider-btn.png">
+  </section>
+
+  <section class="container4">
+    <div class="seperate">
+      <div class="content">
+        <h1> Best <span class="color">Vacation plan</span></h1>
+        <p>Plan your perfect vacation with our travel agency. Choose <br>
+          among hundreds of all-inclusive offers!</p>
+      </div>
+      <div class="tree">
+        <img src="Element (1).png" alt="">
+      </div>
+    </div>
+
+    <div class="side-btn">
+      <img src="Slider-btn (1).png" alt="">
+    </div>
+
+    <div class="label-grid">
+      <div class="label-card">
+        <img src="Image (6).png" alt="">
+        <div class="place1">
+          <div class="rome">Rome,Italy</div>
+          <div class="price1">$5,42k</div>
+        </div>
+        <div class="place 2">
+          <div class="two">
+            <div> <img src="Navigation.png" alt=""> </div>
+            <div class="trip">10 days trip</div>
+          </div>
+          <div class="pic2">
+            <img src="star 1 (1).png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="shadow">
+        <div class="label-card">
+          <img src="Image (6).png" alt="">
+          <div class="place1">
+            <div class="rome">Landon,UK</div>
+            <div class="price1">$2,42k</div>
+          </div>
+          <div class="place 2">
+            <div class="two">
+              <div> <img src="Navigation.png" alt=""> </div>
+              <div class="trip">07 days trip</div>
+            </div>
+            <div class="pic2">
+              <img src="star 1 (1).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label-card">
+        <img src="Image (7).png" alt="">
+        <div class="place1">
+          <div class="rome">Osaka,Japan</div>
+          <div class="price1">$5,42k</div>
+        </div>
+        <div class="place 2">
+          <div class="two">
+            <div> <img src="Navigation.png" alt=""> </div>
+            <div class="trip">10 days trip</div>
+          </div>
+          <div class="pic2">
+            <img src="star 1 (1).png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="client">
+    <div class="testimonial">
+      <div class="content-part">
+        <h1>what people say<br>
+          <span class="color">about us</span>
+          <p>Our Clients send us bunch of smilies with our services <br>
+            and we love them.</p>
+          <div class="round-btn">
+            <img src="Slider-btn.png" alt="">
+          </div>
+      </div>
+      <div class="person">
+        <img src="Image (8).png" alt="">
+      </div>
+      <div class="content-image">
+        <div class="pic card">
+          <p>“On the Windows talking painted pasture yet its
+            express parties use.Sure last upon he same as
+            knew next.Of believed or diverted no.”</p>
+          <div class="mike">
+            <h5>Mike taylor</h5>
+            <p>Lahore, Pakistan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container5">
+    <div class="blog">
+      <h1>Get update with <span class="color">latest blog</span></h1>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="Image (9).png" alt="">
+        <div class="four-card">
+          <p>The Amazing Difference a Year of Travelling.</p>
+          <h4>July 27,2001</h4>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Image (10).png" alt="">
+        <div class="four-card">
+          <p>Travel far enough, you meet yourself.</p>
+          <h4>July 27,2001</h4>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="Image (11).png" alt="">
+        <div class="four-card">
+          <p>How to Save Money While Visiting Africa .</p>
+          <h4>July 27,2001</h4>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="Image (12).png" alt="">
+        <div class="four-card">
+          <p>Reflections on 5 Months of Travel: Time to Hang.</p>
+          <h4>July 27,2001</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <img src="Slider.png" alt="">
+    </div>
+
+  </section>
+  <section class="exclusive">
+    <div class="exclusive-part">
+      <div class="subscribe">
+        <p>Subscribe and get exclusive<br> deals & offer
+        <p>
+            <!--<div><img src="Element (2).png" alt=""></div>-->
+      </div>
+      <div class="mail">
+        <div class="separate-cont">
+          <img src="Mail.png" alt="">
+          <div class="subscribe-btn">
+            subscribe
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="final-bg">
+      <div class="final">
+        <div class="facebook">
+            Trabook<img src="Vector.svg" alt="">
+          <p>Book your trip in minute, get full
+            Control for much longer.</p>
+          <div class="social">
+            <img src="Social.png" alt="">
+            <div class="social">
+                <img src="Social (1).png" alt="">
+              </div>
+              <div class="social">
+                <img src="Social (2).png" alt="">
+          </div>
+        </div>
+        </div>
+
+        <div class="details">
+          <div class="company">
+            <div class="bold">
+              <a>company</a>
+            </div>
+            <div class="semi-bold">
+              <a>About</a>
+              <a>careers</a>
+              <a>Logistic</a>
+              <a>Privacy&policy</a>
+            </div>
+          </div>
+
+          <div class="company">
+            <div class="bold">
+              <a>Contact</a>
+            </div>
+            <div class="semi-bold">
+              <a>Help/FAQ</a>
+              <a>press</a>
+              <a>Affilates</a>
+            </div>
+          </div>
+
+          <div class="company">
+            <div class="bold">
+              <a>More</a>
+            </div>
+            <div class="semi-bold">
+              <a>Press center</a>
+              <a>Our Blog</a>
+              <a>Low fair tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <footer>
+        <div class="end">
+          <h1>Copyright, Trabook 2022. All rights reserved.<h1>
+              <p>Terms & Conditions</p>
+      </footer>
+  </section>
+</body>
+</html>
